@@ -1,77 +1,75 @@
-```markdown
-# Desafio Delphi Web (WebBroker + Indy)
+# 🚀 Desafio Delphi Web (WebBroker + Indy)
 
-##  Objetivo do desafio
-O objetivo deste projeto foi demonstrar a capacidade de aprender uma nova linguagem/tecnologia
-e transformar uma especificação em um programa funcional, mesmo sem experiência prévia.
+## 🎯 Objetivo do desafio
+O objetivo deste projeto foi demonstrar a capacidade de aprender uma nova linguagem/tecnologia e transformar uma especificação em um programa funcional, mesmo sem experiência prévia.
 
 O desafio consistia em criar um programa em Delphi com interface web, contendo dois botões:
-- Cadastrar
-- Pesquisar
+- 🟢 **Cadastrar**
+- 🔍 **Pesquisar**
 
-Além disso, foi exigida a implementação de uma **API em Delphi** que apresentasse um alerta visual quando o cadastro atingisse 5 nomes.
+Além disso, foi exigida a implementação de uma **API em Delphi** que apresentasse um alerta visual quando o cadastro atingisse **5 nomes**.
 
 ---
 
-## Arquitetura
+## 🧱 Arquitetura
 O projeto utiliza:
 
-### WebBroker
+### 🧩 WebBroker
 Responsável por:
-- criar rotas (endpoints)
-- receber requisições HTTP
-- gerar páginas HTML
+- 🌐 criar rotas (endpoints)
+- 📩 receber requisições HTTP
+- 🧾 gerar páginas HTML
 
-### Indy (TIdHTTPWebBrokerBridge)
+### ⚙️ Indy (TIdHTTPWebBrokerBridge)
 Responsável por:
-- executar o servidor HTTP local
-- escutar a porta 8080
-- conectar o WebBroker com o navegador
+- 🖥️ executar o servidor HTTP local
+- 🔌 escutar a porta **8080**
+- 🔗 conectar o WebBroker com o navegador
 
 ---
 
-## Rotas implementadas
+## 🔗 Rotas implementadas
 
 | Rota | Método | Função |
 |------|--------|--------|
-| `/` | GET | Página inicial com botões |
-| `/cadastrar` | GET | Exibe formulário de cadastro |
-| `/cadastrar` | POST | Processa cadastro |
-| `/pesquisar` | GET | Exibe formulário de pesquisa |
-| `/pesquisar` | POST | Processa pesquisa |
+| `/` | GET | 🏠 Página inicial com botões |
+| `/cadastrar` | GET | 📝 Exibe formulário de cadastro |
+| `/cadastrar` | POST | ✅ Processa cadastro |
+| `/pesquisar` | GET | 🔍 Exibe formulário de pesquisa |
+| `/pesquisar` | POST | 🔎 Processa pesquisa |
 
 ---
 
-## Funcionalidades implementadas
+## ✅ Funcionalidades implementadas
 
-### Cadastro
-- Exibe campos para número e nome
-- Associa cada número a um nome
-- Permite cadastro de até **10 pares**
-- Validações:
-  - número inteiro obrigatório
-  - nome obrigatório
-  - número não duplicado
-- Ao atingir **5 cadastros**, exibe um alerta visual (alert)
+### 📝 Cadastro
+- 🧾 Exibe campos para número e nome  
+- 🔗 Associa cada número a um nome  
+- 📌 Permite cadastro de até **10 pares**  
+- 🛡️ Validações:
+  - 🔢 número inteiro obrigatório
+  - 🧑‍💼 nome obrigatório
+  - 🚫 número não duplicado
+- ⚠️ Ao atingir **5 cadastros**, exibe um alerta visual (alert)
 
-### Pesquisa
-- Permite informar **um ou mais números**, separados por vírgula
-- Exibe os nomes associados a cada número
-- Informa quando um número não está cadastrado
-- Informa quando um número informado é inválido
+### 🔍 Pesquisa
+- 🧮 Permite informar **um ou mais números**, separados por vírgula  
+- 🧑‍🏫 Exibe os nomes associados a cada número  
+- ❌ Informa quando um número não está cadastrado  
+- ⚠️ Informa quando um número informado é inválido  
 
 ---
 
-## Como funciona o sistema (fluxo)
+## 🔄 Como funciona o sistema (fluxo)
 
-### 1) Cadastro
+### 1) 📝 Cadastro
 - Usuário clica em **Cadastrar**
 - O sistema exibe o formulário
 - Usuário envia número e nome
 - O sistema valida e armazena em memória
-- Ao atingir 5 cadastros, aparece alerta
+- ⚠️ Ao atingir 5 cadastros, aparece alerta
 
-### 2) Pesquisa
+### 2) 🔍 Pesquisa
 - Usuário clica em **Pesquisar**
 - O sistema exibe o formulário
 - Usuário envia números separados por vírgula
@@ -79,41 +77,33 @@ Responsável por:
 
 ---
 
-## Como executar
+## ▶️ Como executar
 
-1. Abra o projeto no Delphi
+1. Abra o projeto no Delphi  
 2. Execute o arquivo principal:
 
-```
-
+```bash
 CadastroAPI.dpr
+Abra o navegador e acesse:
 
-```
+http://localhost:8080/
+⚠️ Observações importantes
+💾 Os dados são armazenados em memória, usando listas (TList<Integer> e TList<string>).
 
-3. Abra o navegador e acesse:
+🔁 Ao reiniciar o servidor, todos os cadastros são perdidos.
 
-```
+🧩 Para persistência real, seria necessário usar banco de dados ou arquivo.
 
-[http://localhost:8080/](http://localhost:8080/)
+🛠️ Tecnologias utilizadas
+Delphi (Object Pascal)
 
-```
+WebBroker
 
----
+Indy (TIdHTTPWebBrokerBridge)
 
-##  Observações importantes
-- Os dados são armazenados **em memória**, usando listas (`TList<Integer>` e `TList<string>`).
-- Ao reiniciar o servidor, todos os cadastros são perdidos.
-- Para persistência real, seria necessário usar banco de dados ou arquivo.
+👤 Autor
+Andrew Matheus
 
-
-##  Tecnologias utilizadas
-- Delphi (Object Pascal)
-- WebBroker
-- Indy (TIdHTTPWebBrokerBridge)
+🔗 [LinkedIn](https://www.linkedin.com/in/andrewmbs/)
 
 ---
-
-## Autor
-- Andrew Matheus
-- https://www.linkedin.com/in/andrewmbs/
-```
