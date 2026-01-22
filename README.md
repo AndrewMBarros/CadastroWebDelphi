@@ -95,12 +95,12 @@ http://localhost:8080/
 🧩 Para persistência real, seria necessário usar banco de dados ou arquivo.
 
 🛠️ Tecnologias utilizadas
-Delphi (Object Pascal)
+
+Delphi 12 (Object Pascal)
 
 WebBroker
 
 Indy (TIdHTTPWebBrokerBridge)
-
 👤 Autor
 Andrew Matheus
 
