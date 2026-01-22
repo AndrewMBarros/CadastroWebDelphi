@@ -2,7 +2,8 @@
 # Desafio Delphi Web (WebBroker + Indy)
 
 ##  Objetivo do desafio
-O objetivo deste projeto foi demonstrar a capacidade de aprender uma nova linguagem/tecnologia e transformar uma especificação em um programa funcional, mesmo sem experiência prévia.
+O objetivo deste projeto foi demonstrar a capacidade de aprender uma nova linguagem/tecnologia
+e transformar uma especificação em um programa funcional, mesmo sem experiência prévia.
 
 O desafio consistia em criar um programa em Delphi com interface web, contendo dois botões:
 - Cadastrar
